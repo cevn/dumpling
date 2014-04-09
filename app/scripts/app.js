@@ -22,17 +22,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  })
-  .factory('foods', function($resource) {
-    return $resource('assets/foods.json', {}, {
-      query: {
-        method: 'GET',
-        isArray: true
-      }
-    });
-  })
-  .service('jsonService', function(foods) {
-    return {
-      foods: foods.query()
-    };
   });
