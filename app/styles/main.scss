@@ -1,17 +1,9 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
 // bower:scss
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
 
 /* Space out content a bit */
 body {
@@ -42,13 +34,13 @@ body {
 
 /* Custom page footer */
 .footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
@@ -74,4 +66,24 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+}
+
+
+
+.animate.ng-hide-add, .animate.ng-hide-remove {
+  -webkit-transition:all linear 1.5s;
+  -moz-transition:all linear 1.5s;
+  -o-transition:all linear 1.5s;
+  transition:all linear 1.5s;
+  display:block!important;
+}
+ 
+.animate.ng-hide-add.ng-hide-add-active,
+.animate.ng-hide-remove {
+  opacity:0;
+}
+ 
+.animate.ng-hide-add,
+.animate.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
 }

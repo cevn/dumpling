@@ -1,7 +1,12 @@
 
-<pre>
-$scope.selectedFoodId = "{{selectedFood.id}}" 
-</pre> 
+<div class="animate well" 
+  ng-hide="selectedFood"
+  >
+  <p>dumpling is a website to help people quickly search for nutrition data. 
+  Our data is based on the 2011 release of the USDA's nutrient database. 
+  Try it now below!</p>
+</div>
+
 <div class="container"> 
   <form class="form-inline" role="form">
     <div class="form-group col-md-6 col-md-offset-3">
@@ -17,7 +22,32 @@ $scope.selectedFoodId = "{{selectedFood.id}}"
         bs-typeahead
       >
     </div>
-  </form>
+  </form><br><br> 
+
+  <div 
+    class="animate"
+    ng-show="selectedFood" 
+    ng-switch="selectedFood"
+  > 
+    <h2>Nutrition Info: {{selectedFood.description}}</h2>
+    <p>Portion size: {{selectedFood.portions[0].amount}} 
+                     {{selectedFood.portions[0].unit}}</p>
+    <table class="table table-hover"> 
+      <thead>
+        <tr>
+          <th>Nutrient</th>
+          <th>Weight</th>
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr ng-repeat="nutrient in selectedFood.nutrients | limitTo: 5"
+            ng-animate="animate">
+          <td>{{nutrient.description}}</td> 
+          <td>{{nutrient.value}} {{nutrient.units}}</td>
+        </tr>
+      </tbody> 
+    </table>
+  </div> 
 </div>
 
 <br /> 
