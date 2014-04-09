@@ -6,7 +6,16 @@ $scope.selectedFoodId = "{{selectedFood.id}}"
   <form class="form-inline" role="form">
     <div class="form-group col-md-6 col-md-offset-3">
       <label><i class="fa fa-coffee"></i> Food</label>
-      <input type="text" class="form-control" ng-model="selectedFood" ng-options="food.description for food in foods" placeholder="Enter food" bs-typeahead>
+      <input type="text" 
+        class="form-control" 
+        ng-model="selectedFood" 
+        ng-options="food.description for food in foods" 
+        placeholder="Enter food" 
+        data-min-length="0" 
+        data-html="1" 
+        data-animation="am-flip-x" 
+        bs-typeahead
+      >
     </div>
   </form>
 </div>
