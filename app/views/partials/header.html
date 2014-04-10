@@ -1,12 +1,12 @@
-<div class="container header">
+<div class="container header" bs-navbar>
   <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header"> 
       <a class="navbar-brand">Dumpling</a> 
     </div> 
     <ul class="nav navbar-nav pull-right">
-      <li class="active"><a ng-href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a ng-href="#">Contact</a></li>
+      <li data-match-route='/'><a href="#/">Home</a></li>
+      <li data-match-route='/about'><a href="#/about">About</a></li>
+      <li data-match-route='/contact'><a href="#/contact">Contact</a></li>
     </ul>
   </nav> 
 </div>
