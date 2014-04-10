@@ -1,8 +1,10 @@
 {
   "name": "dumpling",
-  "description": "New website for nutrition info!", 
+  "description": "New website for nutrition info!",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-cli": "^0.1.13"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
