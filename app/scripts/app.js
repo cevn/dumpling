@@ -7,7 +7,7 @@ angular
     'ngSanitize',
     'ngRoute',
     'ngAnimate',
-    'mgcrea.ngStrap',
+    'mgcrea.ngStrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -1,18 +1,19 @@
 'use strict';
 
-describe('Service: Jsonservice', function () {
+describe('Service: jsonService', function () {
 
   // load the service's module
   beforeEach(module('dumplingApp'));
 
+
   // instantiate service
-  var Jsonservice;
-  beforeEach(inject(function (_Jsonservice_) {
-    Jsonservice = _Jsonservice_;
+  var jsonService;
+  beforeEach(inject(function (_jsonService_) {
+    jsonService = _jsonService_;
   }));
 
   it('should do something', function () {
-    expect(!!Jsonservice).toBe(true);
+    expect(!!jsonService).toBe(true);
   });
 
 });
