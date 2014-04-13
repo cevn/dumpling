@@ -3,7 +3,7 @@
   "description": "New website for nutrition info!",
   "version": "0.0.1",
   "devDependencies": {
-    "grunt-cli": "^0.1.13"
+    "grunt-cli": "^0.1.13",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~1.0.0",
