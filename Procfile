@@ -1,1 +1,1 @@
-web: grunt serve:dist
+web: coffee web.coffee
