@@ -1,1 +1,1 @@
-web: ./node_modules/grunt-cli/bin/grunt serve:dist
+web: grunt serve:dist
