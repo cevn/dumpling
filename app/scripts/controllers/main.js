@@ -1,7 +1,11 @@
 'use strict';
 
 angular.module('dumplingApp')
-  .controller('MainCtrl', function ($scope, jsonService, foods) {
+  .controller('MainCtrl', [
+      '$scope', 
+      'jsonService', 
+      'foods', 
+      function ($scope, jsonService, foods) {
       $scope.foods = jsonService.foods;
       $scope.selectedFood = '';
-    });
+    }]);
