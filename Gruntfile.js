@@ -298,11 +298,6 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/bower_components/components-font-awesome/fonts/',
-          src: '**',
-          dest: '<%= yeoman.app %>/styles/fonts'
-        }, {
-          expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
@@ -324,7 +319,22 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/assets/',
           src: '**',
           dest: '<%= yeoman.dist %>/assets'
-        }]
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/bower_components/components-font-awesome/fonts',
+          dest: '<%= yeoman.dist %>/bower_components/components-font-awesome/fonts',
+          src: [ '**' ]
+        }, { 
+          expand: true,
+          cwd: '<%= yeoman.app %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
+          dest: '<%= yeoman.dist %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
+          src: [ '**' ]
+        }, { 
+          expand: true, 
+          cwd: '<%= yeoman.app %>/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap',
+          dest: '<%= yeoman.dist %>/bower_components/bootstrap/dist/fonts',
+          src: [ '**' ]
+          }]
       },
       styles: {
         expand: true,
