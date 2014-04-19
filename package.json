@@ -2,6 +2,11 @@
   "name": "dumpling",
   "description": "New website for nutrition info!",
   "version": "0.0.1",
+  "repository" :
+    { "type" : "git"
+    , "url" : "http://github.com/cevn/dumpling.git"
+    }
+
   "dependencies": {
     "grunt-cli": "^0.1.13",
     "grunt": "~0.4.1",
